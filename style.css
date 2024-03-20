@@ -1,0 +1,251 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+    margin-left:  60px;
+}
+
+main{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    width: 550px;
+    height: 550px;
+    padding-left: 10px;
+}
+
+.cajatexto{
+    width: 500px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: #F3F5FC;
+    text-transform: lowercase;
+}
+
+::placeholder{
+    color: #0A3871;
+} .cajatexto:focus{
+    outline: none;
+    
+} 
+
+.alerta{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 10px;
+    display: flex;
+    color: #495057;
+}
+
+.exclamacion{
+    width: 205px;
+    height: 18px;
+    opacity: 0.8px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.boton{
+    display: flex;
+    width: 680px;
+    height: 67px;
+    margin-top: 320px;
+    margin-left: 0px;
+    gap: 24px;
+}
+
+.container__boton1{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    background-color:#0A3871;
+    color:white;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container__boton2{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+.programador{
+    width: 605px;
+    height: 18px;
+    opacity: 0.8px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0A3871;
+    margin-top: 1em;
+}
+.derecha{
+    display:flex;
+    position: absolute;
+    width: 400px;
+    height: 520px;
+    left: 800px;
+    padding-right: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.50);
+}
+
+.container_muneco{
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    align-items: center;
+}
+.container_muneco img{
+    width: 300px;
+    height: 240px;
+    
+}
+ 
+.resultado{
+    position: absolute;
+    box-sizing: border-box;
+    top: 10px;
+    margin-left: 50px;
+    color: #495057;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+.mensaje{
+    background: white;
+    color: #495057;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+}
+.mensaje:focus{
+    outline: none;
+}
+
+.parrafo_derecha h3{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: #343A30;
+    padding-top: 355px;
+}
+
+.parrafo_derecha p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 5px;
+}
+
+.copiar{
+    padding-left: 40px;
+    top: 420px;
+    position: absolute;
+}
+
+#boton_copiar{
+    width: 320Px;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    .parrafo_derecha{
+        display: block;
+    }
+}
+@media screen and(width<= 480px){
+    .logo{
+        width: 31.09px;
+        height: 49.03px;
+        margin-top: 74.97px;
+        margin-left: 40px;
+        color: darkblue;
+    }
+    .principal{
+        width: 90%;
+        height: 288px;
+        top: 240px;
+        left: 10px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+}
+
+    @media screen and(max-width:360px){
+   
+    .logo{
+        width: 32px;
+        height: 48px;
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+    .principal{
+        width: 90%;
+        height: 624px;
+        margin-top: 12px;
+        margin-left: 16px;
+    }
+
+}

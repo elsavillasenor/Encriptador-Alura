@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="imagenes/Logo.png" alt="Logo de Alura">
+      </div>
+    </header>
+    <main>
+        <section class="principal">
+             <div >
+               <textarea class="cajatexto" cols="30" rows="30" id="caja-texto" placeholder="Ingrese el texto aquí"></textarea> 
+            </div>
+
+        <div class="alerta">
+            <img src="imagenes/bi_exclamation-circle-fill.png" alt="!" >
+            <p class="exclamacion">Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="boton">
+            <button class="container__boton1" onclick="btnEncriptar()">Encriptar</button>
+            <button class="container__boton2" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+        <footer>
+            <p class="programador">Programador Elsa Villaseñor - Encriptador Alura &copy Copyright - 2024</p>
+        </footer>
+    </section>
+    <section class="derecha">
+
+        <div class="resultado">
+            <textarea  class="mensaje" readonly cols="20" rows="3"></textarea>
+        </div>
+        <div class="container_muneco" >
+            <img src="imagenes/Muñeco.png" alt="Muñeco"/> 
+        </div>
+
+        <div class="parrafo_derecha">
+            <h3 >Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div> 
+       
+
+
+                <div class="copiar">
+            <button id="boton_copiar" onclick="copiarContenido()" >Copiar</button>
+        </div>
+    </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
